@@ -14,7 +14,7 @@ To quantify the crystalline structure of polyethylene Abhiram Kannan define a pr
 of a lamella (in the crystalline structure. the extracted parameters are  dimension and orientation parameters.
 
 ![example of parameters extraxted to quantify the crystalline structure]
-(https://github.com/Materials-Informatics-Class-Fall2015/MIC-polymers/blob/gh-pages/img/posts/parameters.PNG)
+({{ site.url }}/MIC-polymers/img/posts/parameters.PNG)
 
 The polymers blown films for packaging application need to possess a combination of flexibility, toughness and ductility.
 These mechanical characteristics are most often mesured by two standard characterisation methods: the puncture resistance test 
