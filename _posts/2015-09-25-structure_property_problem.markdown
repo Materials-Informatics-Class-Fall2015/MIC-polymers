@@ -37,4 +37,4 @@ properties mesured.
 To tackle this problem we will have to reduce the number of geometrical parameters and find a correlation between the
 mechanical properties and the principal geometrical features.
 
-![structure property problem workflow](https://github.com/Materials-Informatics-Class-Fall2015/MIC-polymers/blob/gh-pages/img/posts/sp_workflow.PNG)
+![structure property problem workflow](https://{{site.url}/MIC-polymers/blob/gh-pages/img/posts/sp_workflow.PNG)
