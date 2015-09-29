@@ -16,7 +16,7 @@ $$
 f^{11}( \pmb x) = \frac{1}{V \eta_o^2} \int I ( \pmb k) e^{-i\pmb k\pmb x} d\pmb k + V_1^2
 $$
 
-Where $f^{11}$ is the auto correlation of two states, $V_1$ is the volume fraction, $\eta_o$ is the initial thickness, and $I(k)$ is the intensity of the X-ray signal in fourier space. 
+Where $f^{11}$ is the auto correlation of two states, $V_1$ is the volume fraction, $\eta_o^2$ is the mean square fluctuation of the scattering length density, and $I(k)$ is the intensity of the X-ray signal in fourier space. 
 This equation was previously derived by David Brough shown  [here](http://nbviewer.ipython.org/github/phelpsforpresident/MIC-XRD-Polymer/blob/gh-pages/notebooks/Relationship_between_XRD_and_Autocorrelation.ipynb)
 
 There are several things to note about this equation, the most important being it is based on initial, known conditions of the material. A post going more in depth into the equation is coming. The first step in applying the derived equation
