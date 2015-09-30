@@ -43,7 +43,7 @@ Now after we have identified the beam stop we will apply symmetry to the image. 
 #Autocorrelation
 Now that we have working data we can proceed to the first step of finding the autocorrelation of the SLDD. The result is shown below.
 
-![IfftApplied](https://40.media.tumblr.com/fa103e0cddf2ee996d613a1284a4f6c3/tumblr_nvi06aaikw1rlqsr4o1_540.jpg)
+![IfftApplied](https://40.media.tumblr.com/d17e6250a380c0ee37afe876d171c11a/tumblr_nvi2ioLQYb1rlqsr4o1_1280.jpg)
 
 This is the first step to getting 2-pt statistics. In order to complete the conversion we relate the mean squared fluctuation of scatter length density $/eta_0^2$ and
 the volume fraction, $V_1$, found experimentally to $Q$, which represents the total scattering power of the specimen. This is described in detail in the post [here](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/09/29/Derivation-equation/). 
