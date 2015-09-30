@@ -8,13 +8,13 @@ author:     Marie Dekou
 <!-- Start Writing Below in Markdown -->
 
 
-#What is it?
+#Why do we need this equation?
 
 Our first step in the reconstruction problem is to generate the 2-points statistics from the SAXS images. To do that we need to find the equation that links the electron density to the autocorrelation function.
 
 The next image shows what happens theoritically.
 
-![theoritical transformation]({{site.url}}/MIC-polymers/img/posts/transformation)
+![theoritical transformation]({{site.url}}/MIC-polymers/img/posts/transformation.PNG)
 
 where $ \rho(r)$ is the scattering lenght density distribution
            A(q) the normalized amplitude of scattering 
@@ -34,7 +34,9 @@ So the only way to reconstruct the microstructure is to follow this path:
 
 To solve the first point on our project, we need to derive the auto correlation of a local state from the scattering intensity. [This derivation equation](http://nbviewer.ipython.org/github/phelpsforpresident/MIC-XRD-Polymer/blob/gh-pages/notebooks/Relationship_between_XRD_and_Autocorrelation.ipynb)  was already solved by David Brough. For more details on how it was done follow the previous link.
 Here is final equation to obtain the autocorrelation of phase 1. 
+
 $$ f^{11}( \pmb x) = \frac{1}{V \eta_o^2} \int I ( \pmb k) e^{-i\pmb k\pmb x} d\pmb k + V_1^2 $$
+
 Let know clearly define each components of this equation.
 
 1. We will be using the SAXS images for the reconstruction, so our microstructure function will have 2 local states: amorphous region and crystalline region.
@@ -53,6 +55,7 @@ Q=$\int  I(r)dr$, Q is the sum of the intensity of our scattering volume (the su
 And we can easily show that Q=$\Gamma_  \eta $(0)=$V \eta_o^2 $ 
 
 So our problem becomes easier to compute 
+
  $$ f^{11}( \pmb x) = \frac{1}{Q} \int I ( \pmb k) e^{-i\pmb k\pmb x} d\pmb k + V_1^2 $$
  where Q is the sum of the intensity
 
