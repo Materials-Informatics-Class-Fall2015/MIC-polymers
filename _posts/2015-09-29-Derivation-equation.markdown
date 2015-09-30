@@ -14,7 +14,7 @@ Our first step in the reconstruction problem is to generate the 2-points statist
 
 The next image shows what happens theoritically.
 
-![theoritical transformation]({{site.url}}/MIC-polymers/img/posts/transformation.PNG)
+![theoritical transformation]({{ site.url }}/MIC-polymers/img/posts/transformation.PNG)
 
 where $ \rho(r)$ is the scattering lenght density distribution
            A(q) the normalized amplitude of scattering 
