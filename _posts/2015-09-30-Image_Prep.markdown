@@ -27,19 +27,23 @@ We first start with a raw image
 ![Raw](https://40.media.tumblr.com/71ab1336244161dbcd9fbc801b8f74a2/tumblr_nve0fcJxiN1rlqsr4o1_540.png) 
 
 #Identify Beam Stop
-Now we identify the beam stop. Currently we have not applied any correction for the beam stop and are in the process of determining the best
-course of action to account for the beam stop. It is still necessary to identify the beam stop in order to apply symmeterize the image.
+Now we identify the beam stop. We are in the process of determining the best course of action to account for the beam stop. For now we will apply the max intensity to the beam stop area. 
+It is still necessary to identify the beam stop in order to apply symmeterize the image.
 
-![Beam Stop](https://40.media.tumblr.com/c16c4895860750999d9b79e1f8eb53a5/tumblr_nvhsp4diEg1rlqsr4o1_1280.png)
+##Original Beam Stop
+![Beam Stop Raw](https://40.media.tumblr.com/c16c4895860750999d9b79e1f8eb53a5/tumblr_nvhsp4diEg1rlqsr4o1_1280.png)
+
+##Corrected with Max Intensity Method
+![Beam Stop Corrected](https://40.media.tumblr.com/de37fe07fbfcb6e3cc2d5aab0f475a64/tumblr_nvi05pXA2j1rlqsr4o1_540.jpg)
 
 #Symmeterize image
-
+Now after we have identified the beam stop we will apply symmetry to the image. Note: the image below does NOT have the corrected beam stop.
 ![Symmetry Applied](https://36.media.tumblr.com/8dc8c804df5dc35ad5e7ad2f97334087/tumblr_nvhtj6mwfI1rlqsr4o1_1280.jpg)
 
 #Autocorrelation
 Now that we have working data we can proceed to the first step of finding the autocorrelation of the SLDD. The result is shown below.
 
-![IfftApplied](https://36.media.tumblr.com/c9687eebc4b894c8e075d0638e6822a9/tumblr_nvhticr6zM1rlqsr4o1_1280.jpg)
+![IfftApplied](https://40.media.tumblr.com/fa103e0cddf2ee996d613a1284a4f6c3/tumblr_nvi06aaikw1rlqsr4o1_540.jpg)
 
 This is the first step to getting 2-pt statistics. In order to complete the conversion we relate the mean squared fluctuation of scatter length density $/eta_0^2$ and
 the volume fraction, $V_1$, found experimentally to $Q$, which represents the total scattering power of the specimen. This is described in detail in the post [here](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/09/29/Derivation-equation/). 
