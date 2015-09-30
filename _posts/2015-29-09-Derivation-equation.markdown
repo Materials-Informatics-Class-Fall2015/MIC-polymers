@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Derivation equation for 2-pt stat recovery
-date:       2015-29-09 12:00:00
+date:       2015-09-29 12:00:00
 author:     Marie Dekou
 
 ---
