@@ -19,6 +19,8 @@ As a visual aid the basic process is shown below. In this plot we have $\rho(r)$
 density distribution (SLDD) and $I(s)$ is the experimental scatter data we have. We are effectively back tracking to $\Gamma_\rho(r)$ which
 is the autocorrelation function of our SLDD. From here we can than find our 2-pt statistics.
 
+![Visual Aid](https://41.media.tumblr.com/b00fe6a64ecfdb89feb1422f6600e1ce/tumblr_nvhw1d6uuh1rlqsr4o1_400.png)
+
 #Raw Image
 We first start with a raw image
 
@@ -41,3 +43,6 @@ Now that we have working data we can proceed to the first step of finding the au
 
 This is the first step to getting 2-pt statistics. In order to complete the conversion we relate the mean squared fluctuation of scatter length density $/eta_0^2$ and
 the volume fraction, $V_1$, found experimentally to $Q$, which represents the total scattering power of the specimen. This is described in detail in the post here (link coming). 
+
+##Sources
+[1] R. J. Roe, Methods of X-Ray and Neutron Scattering in Polymer Science, 174-176, Oxford University Press 2000.
