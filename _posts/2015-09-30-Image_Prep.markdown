@@ -13,7 +13,7 @@ different scattering length densities for the respective phases.
 #Image Preparation
 In order to perform reconstruction we need to first identify the two-point statistics of the autocorrelation in order
 to do phase recovery. This requires careful treatment of the data in order to successfully apply our relation from the 
-autocorrelation to the two point statistics defined in the post here. (link to post coming)
+autocorrelation to the two point statistics defined in the post [here](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/09/29/Derivation-equation/).
 
 As a visual aid the basic process is shown below. In this plot we have $\rho(r)$ is the scattering length
 density distribution (SLDD) and $I(s)$ is the experimental scatter data we have. We are effectively back tracking to $\Gamma_\rho(r)$ which
@@ -42,7 +42,7 @@ Now that we have working data we can proceed to the first step of finding the au
 ![IfftApplied](https://36.media.tumblr.com/c9687eebc4b894c8e075d0638e6822a9/tumblr_nvhticr6zM1rlqsr4o1_1280.jpg)
 
 This is the first step to getting 2-pt statistics. In order to complete the conversion we relate the mean squared fluctuation of scatter length density $/eta_0^2$ and
-the volume fraction, $V_1$, found experimentally to $Q$, which represents the total scattering power of the specimen. This is described in detail in the post here (link coming). 
+the volume fraction, $V_1$, found experimentally to $Q$, which represents the total scattering power of the specimen. This is described in detail in the post [here](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/09/29/Derivation-equation/). 
 
 ##Sources
 [1] R. J. Roe, Methods of X-Ray and Neutron Scattering in Polymer Science, 174-176, Oxford University Press 2000.
