@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Image Preparation
-date:       2015-30-09 12:00:00
+date:       2015-09-30 12:00:00
 author:     Andrew Castillo
 ---
 <!-- Start Writing Below in Markdown -->
