@@ -51,7 +51,7 @@ $\eta(z)$=$ρ(z)$-$ρ¯$
 We can show that  $\Gamma_  \eta $(0) =$V \eta_o^2 $  (see [derivation](http://nbviewer.ipython.org/github/phelpsforpresident/MIC-XRD-Polymer/blob/gh-pages/notebooks/Relationship_between_XRD_and_Autocorrelation.ipynb))
 
 Then let consider the the quantity Q define by:
-Q=$\int  I(s)ds$, Q is the sum of the intensity of our scattering volume (the sum of each intensity on our SAXS image).
+Q=$\int  I(s)ds$, Q is the sum of the intensity of our scattering volume (the total scattering power of the specimen).
 
 $Q= \int \Gamma_  \eta(r)[\frac{1}{(2\Pi)^3}\int e^{-ikr} dk]dr $=$ \int \Gamma_  \eta(r) \delta(r)dr$= $\Gamma_  \eta $(0)
 
