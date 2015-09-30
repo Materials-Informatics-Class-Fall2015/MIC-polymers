@@ -34,9 +34,8 @@ course of action to account for the beam stop. It is still necessary to identify
 
 ![Symmetry Applied](https://36.media.tumblr.com/8dc8c804df5dc35ad5e7ad2f97334087/tumblr_nvhtj6mwfI1rlqsr4o1_1280.jpg)
 
-#Inverse Fourier Transform
-Now that we have working data we can proceed to the first step of finding the autocorrelation of the SLDD by performing an inverse fourier
-transform over the data.
+#Autocorrelation
+Now that we have working data we can proceed to the first step of finding the autocorrelation of the SLDD. The result is shown below.
 
 ![IfftApplied](https://36.media.tumblr.com/c9687eebc4b894c8e075d0638e6822a9/tumblr_nvhticr6zM1rlqsr4o1_1280.jpg)
 
