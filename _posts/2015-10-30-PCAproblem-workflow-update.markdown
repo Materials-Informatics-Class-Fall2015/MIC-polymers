@@ -28,7 +28,7 @@ The goal  is to generate predictive models of the films mechanical properties th
 
 The point know is to find a way to extract useful information from the data we have.
 One solution can be to use a 2D gaussian distribution of the initial data-set. In fact the 1D gaussian shows that our data-set can be devided into 2 populations. 
-![1D gaussian distribution]({{ site.url}}/MIC-polymers/img/PCAproblem/1D_gaussian.png)
+![1D gaussian distribution]({{ site.url}}/MIC-polymers/img/PCAproblem/1Dgaussian.png)
 
 Using the Gaussian will be an effective way to reduce the data set. So the next step will be to explore this direction. The final problem statement will be made in the next post.
 Stay tuned.
