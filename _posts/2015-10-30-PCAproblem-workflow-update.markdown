@@ -3,9 +3,9 @@ layout:     post
 title:      Next steps: PCA problem workflow update
 date:       2015-10-30 12:00:00
 author:     Materials Innovation
-tags: 		  
+tags: 		  next steps
 ---
-<!-- Start Writing Below in Markdown -->
+
 
 #Bi-variate plots 
 
