@@ -28,6 +28,14 @@ Applying a lorentz correction provides another venue for us to explore going for
 It is also sometimes used to extract structural information directly from intensity images. In effect, this accentuates the features given by the intensity plot. The correction is applied by finding the scattering angle,
 calculating the scattering length $q$ from the equation given below and multiplying the intensity across the image at each point by $4\piq^2$. 
 
+$$
+q = 4\pi sin(\theta)/\lambda
+$$
+
+$$
+\lambda=radiation wavelength, 2\theta=scattering angle
+$$
+
 ##Raw Image
 ![Raw Image](https://40.media.tumblr.com/089ac3da40afa8c1732a124ccaf72366/tumblr_nx3jojVxUJ1rlqsr4o1_1280.png)
 
