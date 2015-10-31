@@ -1,0 +1,28 @@
+---
+layout:     post
+title:      The Characteristic Equation
+date:       2015-09-30 12:00:00
+author:     Andrew Castillo
+---
+<!-- Start Writing Below in Markdown -->
+
+#Initial notes
+We would like to explore microstructure recovery methods for our scatter plots. The first nuance to note is that our intensity plots represents an autocorrelation of a non-eigen microstructure in fourier space. We find the autocorrelation of our microstructure in real space by taking the inverse fourier transform and normalizing the raw intensity image. 
+We have defined a characteristic equation [here](temp) which we will explore the implications of such a function on simulated microstructures.       
+
+#Application of the characteristic equation
+A good amount of time has been spent trying to acquire 2-pt statistics through various means of scaling and applied corrections. In the equation given [here](temp) we see that taking the inverse fourier transform of the intensity data and normalizing results in data that can be directly correlated to volume fraction and 2-pt statistics. We will than use the characteristic equation given
+by $\gamma(r)$ to attempt microstructure reconstruction. The discretized version of this equation is shown below. Using $\gamma(r)$ shows that any scaling that would be applied to the data set would be canceled out. 
+
+
+#Data in data out
+The domain of the normalized autocorrelation given by $\gamma(r)$ is -1 to 1 while $\gamma(0)=1$ and $\gamma(inf)=0$. The autocorrelation images produced thus far fullfill this criteria. The simulated microstructures allow us to become more comfortable with the somewhat abstract representation given by the current images we have processed. Modifying some tools in PYMKS allows us to generate non eigen microstructures and vary rudimentary parameters
+pertaining to shape and size. The microstructure is non-eigen, and represents the electron density at certain pockets.
+
+
+
+
+
+
+##Sources
+[1] R. J. Roe, Methods of X-Ray and Neutron Scattering in Polymer Science, 174-176, Oxford University Press 2000.
