@@ -12,7 +12,7 @@ This post revisits the treatment of the beam stop and how to handle the missing 
 #Information at the beam stop is important
 The missing information at the beamstop means missing information in our final statistics of the microstructure. For this reason we will spend some more time implementing ways to fill the gap.
 The original image of the beam stop is shown below. We have been able to automate the identification of the beamstop center. We are still working on methods to automate the detection of the rod portion
-of the beamstop. Using the Lorentz correction we can actually see the beam stop rod much clearer than in the raw image as shown at the bottom of [this post].
+of the beamstop. Using the Lorentz correction we can actually see the beam stop rod much clearer than in the raw image as shown at the bottom of [this post](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/10/28/Lorentz_Correction/).
  
 ##Original Image
 ![raw](https://41.media.tumblr.com/a58c8052a11017423b5ed6abd361bc5a/tumblr_nx3jobetxX1rlqsr4o1_1280.png)
