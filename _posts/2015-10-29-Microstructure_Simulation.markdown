@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      The Characteristic Equation
-date:       2015-09-31 12:00:00
+date:       2015-10-31 12:00:00
 author:     Andrew Castillo
 ---
 <!-- Start Writing Below in Markdown -->
