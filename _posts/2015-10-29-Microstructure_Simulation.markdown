@@ -20,7 +20,7 @@ $$
 $$
 
 #Data in data out
-The domain of the normalized autocorrelation given by $\gamma(r)$ is -1 to 1 while $\gamma(0)=1$ and $\gamma(inf)=0$. The function is an autocorrelation of the microstructure allowing us to apply DFTs to make the calculation fast. The simulated microstructures allow us to become more comfortable with the somewhat abstract representation given by the current images we have processed. Modifying some tools in PYMKS allows us to generate non eigen microstructures and vary rudimentary parameters
+The domain of the normalized autocorrelation given by $\gamma(r)$ is -1 to 1 while $\gamma(0)=1$ and $\gamma(inf)=0$. The function is an autocorrelation of the microstructure allowing us to apply DFTs to make the calculation fast. The simulated microstructures allow us to become more comfortable with the statistics we find from the intensity images. Modifying some tools in PYMKS allows us to generate non eigen microstructures and vary rudimentary parameters
 pertaining to shape and size. The simulated microstructures are on the left and the output of the charateristic equation from these microstructures are shown on the right. A future post will compare these results using the characteristic equation with
 results from our actual images.
 
@@ -32,7 +32,6 @@ results from our actual images.
 
 ##Large sized microstructures
 ![Large Microstructure Size](https://40.media.tumblr.com/55b3efeb560ffc663595763efa707b0a/tumblr_nx3jpc0Swr1rlqsr4o1_1280.png)
-
 
 
 ##Sources
