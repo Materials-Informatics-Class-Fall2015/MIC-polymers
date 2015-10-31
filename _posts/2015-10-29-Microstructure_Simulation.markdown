@@ -8,10 +8,10 @@ author:     Andrew Castillo
 
 #Initial notes
 We would like to explore microstructure recovery methods for our scatter plots. The first nuance to note is that our intensity plots represents an autocorrelation of a non-eigen microstructure in fourier space. We find the autocorrelation of our microstructure in real space by taking the inverse fourier transform and normalizing the raw intensity image. 
-We have defined a characteristic equation [here](temp) which we will explore the implications of such a function on simulated microstructures.       
+We have defined a characteristic equation, which we will explore the results from simulated microstructures.       
 
 #Application of the characteristic equation
-A good amount of time has been spent trying to acquire 2-pt statistics through various means of scaling and applied corrections. In the equation given [here](temp) we see that taking the inverse fourier transform of the intensity data and normalizing results in data that can be directly correlated to volume fraction and 2-pt statistics. We will than use the characteristic equation given
+A good amount of time has been spent trying to acquire 2-pt statistics through various means of scaling and applied corrections. In the equation given [here](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/09/29/Derivation-equation/) we see that taking the inverse fourier transform of the intensity data and normalizing results in data that can be directly correlated to volume fraction and 2-pt statistics. We will than use the characteristic equation given
 by $\gamma(r)$ to attempt microstructure reconstruction. The discretized version of this equation is shown below [1]. Using $\gamma(r)$ shows that any scaling that would be applied to the data set would be canceled out. 
 
 $$
