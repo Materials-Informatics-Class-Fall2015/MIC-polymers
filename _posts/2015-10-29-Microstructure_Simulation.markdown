@@ -8,19 +8,20 @@ author:     Andrew Castillo
 
 #Initial notes
 We would like to explore microstructure recovery methods for our scatter plots. The first nuance to note is that our intensity plots represents an autocorrelation of a non-eigen microstructure in fourier space. We find the autocorrelation of our microstructure in real space by taking the inverse fourier transform and normalizing the raw intensity image. 
-We have defined a characteristic equation, which we will explore the results from simulated microstructures.       
+These steps correspond to finding a characteristic equation. We will explore the results from simulated microstructures in hopes to form a link using the characteristic equation found from the scatter intensity plots, to real microstructure.       
 
 #Application of the characteristic equation
-A good amount of time has been spent trying to acquire 2-pt statistics through various means of scaling and applied corrections. In the equation given [here](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/09/29/Derivation-equation/) we see that taking the inverse fourier transform of the intensity data and normalizing results in data that can be directly correlated to volume fraction and 2-pt statistics. We will than use the characteristic equation given
-by $\gamma(r)$ to attempt microstructure reconstruction. The discretized version of this equation is shown below [1]. Using $\gamma(r)$ shows that any scaling that would be applied to the data set would be canceled out. 
+A good amount of time has been spent trying to acquire 2-pt statistics through various means of scaling and applied corrections. In the equation given [here](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/09/29/Derivation-equation/) we see that taking the inverse fourier transform of the intensity data and normalizing results in data that can be directly correlated to volume fraction and 2-pt statistics. This characteristic equation serves as our statistics of the microstructure. We want to leverage our understanding of the characteristic equation given
+by $\gamma(r)$ to attempt microstructure recovery. The discretized version of this equation is shown below [1]. 
 
 $$
 \gamma(r) = \sum_S[(\rho_{r+s}-<\rho>)(\rho_{s}-<\rho>)]/[((\rho_{s}-<\rho>)(\rho_{s}-<\rho>)]
 $$
 
 #Data in data out
-The domain of the normalized autocorrelation given by $\gamma(r)$ is -1 to 1 while $\gamma(0)=1$ and $\gamma(inf)=0$. The autocorrelation images produced thus far fullfill this criteria. The simulated microstructures allow us to become more comfortable with the somewhat abstract representation given by the current images we have processed. Modifying some tools in PYMKS allows us to generate non eigen microstructures and vary rudimentary parameters
-pertaining to shape and size. 
+The domain of the normalized autocorrelation given by $\gamma(r)$ is -1 to 1 while $\gamma(0)=1$ and $\gamma(inf)=0$. The function is an autocorrelation of the microstructure allowing us to apply DFTs to make the calculation fast. The simulated microstructures allow us to become more comfortable with the somewhat abstract representation given by the current images we have processed. Modifying some tools in PYMKS allows us to generate non eigen microstructures and vary rudimentary parameters
+pertaining to shape and size. The simulated microstructures are on the left and the output of the charateristic equation from these microstructures are shown on the right. A future post will compare these results using the characteristic equation with
+results from our actual images.
 
 ##Small sized microstructures
 ![Small Microstructure Size](https://41.media.tumblr.com/625f22ee8e550d8ad59716585146df36/tumblr_nx3jpm9NWe1rlqsr4o1_1280.png)
