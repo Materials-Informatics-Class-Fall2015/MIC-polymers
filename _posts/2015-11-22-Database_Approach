@@ -1,0 +1,39 @@
+---
+layout:     post
+title:      Overview of the database approach
+date:       2015-11-21 12:00:00
+author:     Andrew Castillo
+---
+<!-- Start Writing Below in Markdown -->
+
+#Typical Reconstruction problem
+In a typical reconstruction problem the formulation showed below is used to reconstruct the microstructure.
+
+$$
+e^{i\theta_k^p}=\frac{SF^{np}_ke^{i\theta}_k}{|M_k^n||M_k^p|}
+$$
+
+The terms $|M_k^p|$ and $|M_k^n|$ are found from the autocorrelations of the discritized phases while $F_k^{pn}$ is the cross correlation. Typically the microstructure is reconstructed using a guess for the phase information pertaining to $e_k^i\theta$. However
+this reconstruction method is not applicable to our problem since we do not have a full set of statistics, nor the cross correlation. We are missing crucial datum to help us get the phase data which is one of the main reasons that the answer to the problem is non
+unique.  
+
+##Database approach
+Our new approach to this problem will be to explore if we can make a match using PCA as an objective means of comparing the scattering images and a handful of simulated microstructures. In order to do this we want to look at the microstructures in PCA space and see
+if clustering still occurs with the missing beam stop. We have decided to do PCA on the fourier representations of the autocorrelations of the simulated microstructures. This is logical since the conversion to real space would just present more work than necessary.
+We have done PCA on 36 simulated microstructures. The PCA of the untouched microstructures are first shown. A beamstop correction is than applied to the simulated microstructures, and PCA is performed once again.
+
+###PCA1: Untouched Microstructures
+![raw]()
+
+###PCA2: Beam Stop applied to Microstructures
+![raw]()
+
+##Now we can see there still  appears to be clustering after the beamstop has been applied. Now we want to look at how much variance is captured by the principle components using scree plots.
+
+###Scree Plot of PCA1
+
+###Scree Plot of PCA2
+
+##Take-aways
+Observing the scree plots we see that it takes # principle commponents to acocunt for #% of the variance for PCA1. Conversely it takes # principle components to account for #% of variance for PCA2. 
+These results suggest that there is a high amount of variance between the microstructures within the beamstop area. 
