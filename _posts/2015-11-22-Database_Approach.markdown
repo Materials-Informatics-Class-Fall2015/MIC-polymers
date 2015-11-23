@@ -28,26 +28,33 @@ As a sanity check we will look at the PCA of the microstructures from the real s
 the higher the crystallinity. volume fraction 
 
 ###Real PCA
-![raw]()
+![raw](https://41.media.tumblr.com/91cd222e7d6c419792662c055007a03a/tumblr_ny8rneD1iH1rlqsr4o1_540.jpg)
 
 ###Fourier PCA
-![raw]()
+![raw](https://40.media.tumblr.com/8c79d9fe68cdbd94dcfa080fb4d1c14f/tumblr_ny8rnmxCcu1rlqsr4o1_540.jpg)
 
 If we flip this PCA and compare to the real pca we can see the clustering patterns appear identical
 
 ###Flip Fourier PCA
-
+![raw](https://40.media.tumblr.com/39f7b9849ef87a7617d6bf732b3d8704/tumblr_ny8rns3Gbc1rlqsr4o1_540.jpg)
 
 
 ##PCA2: Beam Stop applied to Microstructures
 Now if we added the beam stop (took out data from center points) and performed PCA we get the following results.
-![raw]()
+![raw](https://41.media.tumblr.com/ef5a1d39a4486cebe67fca88c7e21b16/tumblr_ny8robWZlD1rlqsr4o1_540.jpg)
 
 We can see that the observations no longer cluster according to volume fraction. We should also compare the scree plots between the untouched PCA and the PCA with the beamstop applied.
 
-##Now we can see there still  appears to be clustering after the beamstop has been applied. Now we want to look at how much variance is captured by the principle components using scree plots. Observing the scree plots we see that it takes many more principle commponents to acocunt for a percentage of variance (choose 95%) in the PCA with the Beamstop.
-This suggest that there is a high amount of variance between the microstructures within the beamstop area. We ultiamtely want to see if we have any clustering due to the parameters that we directly control. We have see no clustering with volume fraction. Performing the PCA and color coding according
+##Take a look at the scree plots
+Now we want to look at how much variance is captured by the principle components using scree plots. Observing the scree plots we see that it takes many more principle commponents to acocunt for a percentage of variance (choose 95%) in the PCA with the Beamstop.
+This suggest that there is a high amount of variance between the microstructures within the beamstop area.
+
+![raw](https://40.media.tumblr.com/1103149225d98715dba698329f618856/tumblr_ny8rotA8ZR1rlqsr4o1_540.jpg)
+
+![raw](https://41.media.tumblr.com/8e7177a829bc8d691f622e1433eb61b6/tumblr_ny8rpeCw6l1rlqsr4o1_540.jpg)
+
+We ultiamtely want to see if we have any clustering due to the parameters that we directly control. We observed no clustering appears to be apparent in relation to volume fraction. Performing the PCA and color coding according
 to spacing also does not give a definitive result. However, if we color code the pca according to "particle" size, we can start to observe clustering. In this case the darker the color the larger the particle. In these trials of PCA the particles all have the same shape.
   
 ###PCA2: "Particle" Size Color Coded
-![raw]()
+![raw](https://40.media.tumblr.com/79c088d040eea14483b7606f89b256dd/tumblr_ny8rqlgoaX1rlqsr4o1_540.jpg)
