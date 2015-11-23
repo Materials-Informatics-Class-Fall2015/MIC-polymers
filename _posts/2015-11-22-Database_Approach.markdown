@@ -46,7 +46,7 @@ Now if we added the beam stop (took out data from center points) and performed P
 We can see that the observations appear to still appear to cluster somewhat according to volume fraction. We should also compare the scree plots between the untouched PCA and the PCA with the beamstop applied.
 
 ##Take a look at the scree plots
-Now we want to look at how much variance is captured by the principle components using scree plots. Observing the scree plots we see that it takes many more principle components to describe 80% of the variance when the beamstop is applied to the image. This means that the information within the beamstop contains a high amount of variance between microstructures
+Now we want to look at how much variance is captured by the principle components using scree plots. Observing the scree plots we see that it takes many more principle components to describe 80% of the variance when the beamstop is applied to the image. 80% is arbitrarily chosen. However just observeing the first 3 PCs on the scree plot shows that up to ~73% of the variance is accounted for when the beam stop is not included. This is in contrast to only ~23% of the variance accounted for within the first three PCs when the beam stop is included. This implies information within the beamstop contains a high amount of variance between microstructures
 
 ![raw](https://36.media.tumblr.com/e26d982f6baf82e9b20f5a035ea438ee/tumblr_nyak5jj0Qf1rlqsr4o1_540.jpg)
 
