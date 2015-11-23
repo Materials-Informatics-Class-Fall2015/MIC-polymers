@@ -34,7 +34,7 @@ of 2 given numbers to an equivalent autocorrelation of an image comprising of 0s
 ##But thats not what we have!
 However, the scattered images are in fourier spaces so lets take a step back. We will find the autocorrelation in fourier space of all of the images above. 
 
-###Segmented Phase, Idealized 2-Phase, Continuous Phases in Fourier Space
+###Autocorrelations in Fourier Space
 ![raw](https://41.media.tumblr.com/c3274a56c919fbf87b37c3ae8932da88/tumblr_ny8he9EoYo1rlqsr4o1_1280.jpg)
 
 ##Approaching the problem as an idealized 2-phase system
