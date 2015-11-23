@@ -58,7 +58,5 @@ of 2-pt statistics to be somewhat preserved knowing the shape of 2-pt statistics
 beam stop is independent of the rest of the information. Knowing this inforamtion, the use of a gaussian as an approximation may be ill advised. 
 
 #Exploring a database approach
-Knowing this information we have decided to approach the problem with a database approach. This involves simulating a large amount of microstructure and trying to match the autocorrelation using certain thresholds. These thresholds will be based on shape and we hope to
-increase the criteria as we become more comfortable with the data. A future post on this, and why traditional reconstruction methods will not work is coming!
-
+Knowing this information we have decided to approach the problem with a database approach. This involves simulating a large amount of microstructure and trying to match the autocorrelation using certain thresholds. These thresholds will be based on shape. Going through this process has been useful as we see that it may be necessary to model the system with continuous states rather than idealized given how different the scattering patterns appear. 
 
