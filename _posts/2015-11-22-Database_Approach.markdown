@@ -43,15 +43,14 @@ If we flip this PCA and compare to the real pca we can see the clustering patter
 Now if we added the beam stop (took out data from center points) and performed PCA we get the following results.
 ![raw](https://41.media.tumblr.com/5b7c7869604fa7731ee8ce6c8fdbc14e/tumblr_nyai9jqA4P1rlqsr4o1_540.jpg)
 
-We can see that the observations appear to still cluster according to volume fraction. We should also compare the scree plots between the untouched PCA and the PCA with the beamstop applied.
+We can see that the observations appear to still appear to cluster somewhat according to volume fraction. We should also compare the scree plots between the untouched PCA and the PCA with the beamstop applied.
 
 ##Take a look at the scree plots
-Now we want to look at how much variance is captured by the principle components using scree plots. Observing the scree plots we see that it takes around 2-3 principle components to describe 98% of the varience. We imagine this is a good
-thing in the case of reconstruction as the data lost in the beamstop has not impeded clustering in PC space
+Now we want to look at how much variance is captured by the principle components using scree plots. Observing the scree plots we see that it takes many more principle components to describe 80% of the variance when the beamstop is applied to the image. This means that the information within the beamstop contains a high amount of variance between microstructures
 
-![raw](https://41.media.tumblr.com/edc4f789f2074ce98259b650aafd0c58/tumblr_nyai9s6OLs1rlqsr4o1_540.jpg)
+![raw](https://36.media.tumblr.com/e26d982f6baf82e9b20f5a035ea438ee/tumblr_nyak5jj0Qf1rlqsr4o1_540.jpg)
 
-![raw](https://41.media.tumblr.com/5b26332d717c22a25281ca15e2a26cbf/tumblr_nyai93AU5N1rlqsr4o1_540.jpg)
+![raw](https://41.media.tumblr.com/d730931dc26c2c42bffd717b5534130e/tumblr_nyak5sCX2z1rlqsr4o1_540.jpg)
 
 We ultiamtely want to see if we have any other clustering due to the parameters that we directly control.  Performing the PCA and color coding according to spacing also does not give a definitive result. However, if we color code the pca according to "particle" size, we can start to observe clustering. In this case the darker the color the larger the particle. In these trials of PCA the particles all have the same shape.
   
