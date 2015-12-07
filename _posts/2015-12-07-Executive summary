@@ -1,0 +1,70 @@
+---
+layout:     	post
+title:      	Project executive summary 
+date:       	2015-01-01 12:00
+author:     	Marie Dekou and Andrew Castillo
+tags:         
+---
+
+## Project Definition
+
+### Polymers and XRD
+
+### Dataset 
+
+We had to work with 3 types of dataset: 
+1. First the SAXS (960 x 960 pixels) and WAXS (960 x 1920 pixels) images from 12 different polymers films. 
+![SAXS]({{ site.url}}/MIC-polymers/img/posts/SAXS_1_0000.png)
+ ![WAXS]({{ site.url}}/MIC-polymers/img/posts/WAXS_1_0000.png)
+2. Second, a 18 x 19 excel table that contains  the process parameters, 3 mechanical properties and the morphological features of 18 polymers extracted from the SAXS and WAXS images. See [data extraction from the SAXS and WAXS images](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/11/25/data-extraction-from-the-SAXS-and-WAXS-images/).
+3. The  [bi-variate distributions](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/10/30/PCAproblem-workflow-update/) of our polymers samples (4836x4 matrix). These distributions just represent the molecular composition of the polymers at an atomic level. 
+
+We decide to tackle 2 different problems from our initial dataset
+1. Generate a PSP linkage for the polymers films using the 18x19 excel table
+2. Recover the polymers microstructure from the SAXS images.
+
+### Challenges 
+
+## Reconstruction Trial 
+
+## PSP linkage results discussion 
+
+The approach we will be taking is the described in the following image:
+![Global approach]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/final posts/problem definition.png)
+
+This post gives more details about our workflow and the tools we used [PSP linkage global approach](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/11/30/PSP_linkage_global_approach/)
+
+The main criteria we will be using to compare the predictive models are [LOOCV](https://en.wikipedia.org/wiki/Cross-validation_(statistics)) results (Leave one out cross validation) ,the RMPE (Root mean percentage error) and the absolute error percentage.
+
+
+### Process-Structure Predictive model 
+
+We start by reducing the each bi-variate distribution to one concatenated vector:
+![Bivariate plots transformation]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/bivariate.png)
+
+We then put the 3 vector in PCA to extract the first component that yield 96% of the total variance (we will call it the bivariate PC). Then we are able to generate some predictive model of the bivariate PC as function of the structure parameters.
+
+![PS results]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/bivariate_results.png)
+
+### Structure-Property Predictive model 
+
+The goal is to predict the 3 mechanical properties using our 13 extracted features (see [data extraction from the SAXS and WAXS images](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/11/25/data-extraction-from-the-SAXS-and-WAXS-images/) ).
+
+We first perform a PCA on the variables. The results show that the first 4 components yields 97% of the variance. 
+![PCs variance]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/PCA variance.png) ![regression results dartdrop]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/dartdrop_results.png) 
+![absolute error]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/error.png). 
+
+
+### Process-Structure-Property Predictive model 
+
+Then we want to explore 2 other type of model:
+1. Process-Property: Predict the mechanical properties using the process parameters
+![PP error]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/PP_error.png)
+2. Process-structure-Property: Predict the mechanical properties using both the structure PCs and the process parameters.
+
+
+
+
+## Collaboration
+
+## Conclusion 
