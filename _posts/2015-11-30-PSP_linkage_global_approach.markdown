@@ -1,8 +1,8 @@
 ---
 layout:     	post
 title:      	PSP linkage global approach
-date:       	2015-11-25 12:00
-author:     	Materials Innovation
+date:       	2015-11-30 12:00
+author:     	Marie Dekou
 tags:         result
 ---
 
