@@ -3,7 +3,7 @@ layout:     	post
 title:      	PSP linkage global approach
 date:       	2015-11-30 12:00
 author:     	Marie Dekou
-tags:         result
+tags:         
 ---
 
 Since we are moving towards the end of the project, we think its a good idea to make a last post to clearly define the structure of our problem and present our workflow. 
