@@ -3,7 +3,7 @@ layout:     	post
 title:      	Data extraction from the SAXS and WAXS images
 date:       	2015-11-25 12:00
 author:     	Marie Dekou
-tags:         result
+tags:         
 ---
 
 ##Goal of the post
