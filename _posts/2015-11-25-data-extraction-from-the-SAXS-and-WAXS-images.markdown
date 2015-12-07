@@ -1,7 +1,7 @@
 ---
 layout:     	post
 title:      	Data extraction from the SAXS and WAXS images
-date:       	2015-01-01 12:00
+date:       	2015-11-25 12:00
 author:     	Materials Innovation
 tags:         result
 ---
