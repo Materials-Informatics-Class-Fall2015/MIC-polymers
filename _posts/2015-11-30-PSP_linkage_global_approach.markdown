@@ -14,7 +14,7 @@ We are trying to generate a PSP linkage of the polymer films from the data-set w
 For the structure, we have the morphological features extracted from the SAXS and WAXS images.
 And for the properties, the tear and puncture resistance of the films.
 
-![problem definition]({{ site.url}}/MIC-polymers/img/PCAproblem/last posts/problem definition.png) 
+![problem definition]({{ site.url}}/MIC-polymers/img/PCAproblem/last posts/problem definition.PNG) 
 
 We will extract 3 types of predictive models:
 1. A Process-Structure predictive model
@@ -25,7 +25,7 @@ We will extract 3 types of predictive models:
 
 Our approach is summarized in the following image.
 
-![global approach]({{ site.url}}/MIC-polymers/img/PCAproblem/last posts/workflow.png) 
+![global approach]({{ site.url}}/MIC-polymers/img/PCAproblem/last posts/workflow.PNG) 
 
  The main idea is to:
 1. Reduce the space (process or structure variables) using a PCA or a stepwise regression
