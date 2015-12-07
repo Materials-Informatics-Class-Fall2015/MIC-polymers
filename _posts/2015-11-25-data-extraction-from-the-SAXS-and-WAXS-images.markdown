@@ -23,9 +23,9 @@ from the 2D data.
 
 Here are 3 examples of how this characteristics features can be extracted using line cuts. 
 
-![dac]({{ site.url}}/MIC-polymers/img/PCAproblem/last posts/dac.png) 
-![Lsaxs]({{ site.url}}/MIC-polymers/img/PCAproblem/last posts/Lsaxs.png) 
-![tilt angle]({{ site.url}}/MIC-polymers/img/PCAproblem/last posts/tilt angle.png) 
+![dac]({{ site.url}}/MIC-polymers/img/PCAproblem/last posts/dac.PNG) 
+![Lsaxs]({{ site.url}}/MIC-polymers/img/PCAproblem/last posts/Lsaxs.PNG) 
+![tilt angle]({{ site.url}}/MIC-polymers/img/PCAproblem/last posts/tilt angle.PNG) 
 
 ### From the WAXS images 
 
