@@ -1,13 +1,13 @@
 ---
 layout:     	post
 title:      	Project executive summary 
-date:       	2015-01-01 12:00
+date:       	2015-12-08 12:00
 author:     	Marie Dekou and Andrew Castillo
 tags:         
 ---
 
 ## Project Definition
-Use given SAXS and WAXS images to recover the microstructure of a semicrystalline polymer. Than, using parameters previously extraced from SAXS and WAXS images build a process structure property linkage.
+Use given SAXS and WAXS images to recover the microstructure of a semicrystalline polymer. Than, using parameters previously extraced from SAXS and WAXS images to build a process structure property linkage.
 
 ### Polymers and XRD
 Small angle x-ray scattering describes microstructural features between 10-1000 angstroms. The material of interest was LLDPE, which is a semi-crystalline polymer. The goal was to observe the crystalline
@@ -18,19 +18,25 @@ semicrystalline, and lower electron density as amorphous. These SAXS images can 
 ### Dataset 
 
 We had to work with 3 types of dataset: 
+
 1. First the SAXS (960 x 960 pixels) and WAXS (960 x 1920 pixels) images from 12 different polymers films. 
 ![SAXS]({{ site.url}}/MIC-polymers/img/posts/SAXS_1_0000.png)
  ![WAXS]({{ site.url}}/MIC-polymers/img/posts/WAXS_1_0000.png)
+
 2. Second, a 18 x 19 excel table that contains  the process parameters, 3 mechanical properties and the morphological features of 18 polymers extracted from the SAXS and WAXS images. See [data extraction from the SAXS and WAXS images](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/11/25/data-extraction-from-the-SAXS-and-WAXS-images/).
+
 3. The  [bi-variate distributions](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/10/30/PCAproblem-workflow-update/) of our polymers samples (4836x4 matrix). These distributions just represent the molecular composition of the polymers at an atomic level. 
 
-We decide to tackle 2 different problems from our initial dataset
+We decide to tackle 2 different problems from our initial dataset:
+
 1. Generate a PSP linkage for the polymers films using the 18x19 excel table
+
 2. Recover the polymers microstructure from the SAXS images.
 
 ### Challenges with recovery
 Attempting to recover the SAXS images proved to be a difficult task. The sources of the obstacles presented were  both experimental as well as conceptual. The SAXS images posed new problems we have
 not been familiar with. Throughout the semester we have identified these problems when it comes to microstructure recovery. The main issues are listed below.
+
 1. Partial Information due to Beam stop 
 2. Partial "Statistics"
 3. Missing phase information (FFT)
@@ -56,7 +62,7 @@ parameters close to those of the actual microstructure can be found.  These find
 ## PSP linkage results discussion 
 
 The approach we will be taking is the described in the following image:
-![Global approach]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/final posts/problem definition.png)
+![Global approach]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/last posts/problem definition.png)
 
 This post gives more details about our workflow and the tools we used [PSP linkage global approach](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/11/30/PSP_linkage_global_approach/)
 
@@ -68,7 +74,7 @@ The main criteria we will be using to compare the predictive models are [LOOCV](
 We start by reducing the each bi-variate distribution to one concatenated vector:
 ![Bivariate plots transformation]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/bivariate.png)
 
-We then put the 3 vector in PCA to extract the first component that yield 96% of the total variance (we will call it the bivariate PC). Then we are able to generate some predictive model of the bivariate PC as function of the structure parameters.
+We then put the 3 vectors in PCA to extract the first component that yield 96% of the total variance (we will call it the bivariate PC). Then we are able to generate some predictive model of the bivariate PC as function of the structure parameters.
 
 ![PS results]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/bivariate_results.png)
 
@@ -78,19 +84,19 @@ The goal is to predict the 3 mechanical properties using our 13 extracted featur
 
 We first perform a PCA on the variables. The results show that the first 4 components yields 97% of the variance. 
 ![PCs variance]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/PCA variance.png) ![regression results dartdrop]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/dartdrop_results.png) 
-![absolute error]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/error.png). 
+![absolute error]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/error.PNG). 
 
 
 ### Process-Structure-Property Predictive model 
 
 Then we want to explore 2 other type of model:
 1. Process-Property: Predict the mechanical properties using the process parameters
-![PP error]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/PP_error.png)
+![PP error]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/PP_error.PNG)
 2. Process-structure-Property: Predict the mechanical properties using both the structure PCs and the process parameters.
 
 
 ## Collaboration
-We have had several meetings with Dr. Kalidindi in order to develop strategies to approach our problems. Abhiram Kannan provided domain expertise when needed. We also received assistance from Yuksel Yabansu in simulating microstructures,
+We have had several meetings with Dr. Kalidindi in order to develop strategies to approach our problems. Abhiram Kannan provided domain expertise when needed. We also received assistance from Yuksel Yabansu in simulating microstructures.
 
 ## Conclusion 
 We have identified many of the main issues regard microstructure recovery using SAXS images. We have built upon the forward problem of microstructure recovery. In effect, we laid the foundation for a database approach to be further explored in the future.  We have also built process-structure-property linkages using extracted microstructural information with varying results. Our results from error suggest that the data extracted may have been too severe a data reduction. Future efforts to make such a linkage would require the full use of SAXS and WAXS images.
