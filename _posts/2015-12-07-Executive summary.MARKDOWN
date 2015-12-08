@@ -62,7 +62,7 @@ parameters close to those of the actual microstructure can be found.  These find
 ## PSP linkage results discussion 
 
 The approach we will be taking is the described in the following image:
-![Global approach]({{site.url}}/MIC-polymers/img/PCAproblem/last posts/problem definition.png)
+![Global approach]({{site.url}}/MIC-polymers/img/PCAproblem/last posts/problem definition.PNG)
 
 
 This post gives more details about our workflow and the tools we used [PSP linkage global approach](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/11/30/PSP_linkage_global_approach/)
@@ -73,11 +73,11 @@ The main criteria we will be using to compare the predictive models are [LOOCV](
 ### Process-Structure Predictive model 
 
 We start by reducing the each bi-variate distribution to one concatenated vector:
-![Bivariate plots transformation]({{site.url}}/MIC-polymers/img/PCAproblem/results/bivariate.PNG)
+![Bivariate plots transformation]({{site.url}}/MIC-polymers/img/PCAproblem/results/bivariate.png)
 
 We then put the 3 vectors in PCA to extract the first component that yield 96% of the total variance (we will call it the bivariate PC). Then we are able to generate some predictive model of the bivariate PC as function of the structure parameters.
 
-![PS results]({{site.url}}/MIC-polymers/img/PCAproblem/results/bivariate_results.PNG)
+![PS results]({{site.url}}/MIC-polymers/img/PCAproblem/results/bivariate_results.png)
 
 We were able to generate 3 accurate models with a low error, that predict the bivariate PC as function of the structure variables. But the model is still based on a small number of data points.
 
@@ -86,8 +86,8 @@ We were able to generate 3 accurate models with a low error, that predict the bi
 The goal is to predict the 3 mechanical properties using our 13 extracted features (see [data extraction from the SAXS and WAXS images](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/11/25/data-extraction-from-the-SAXS-and-WAXS-images/) ).
 
 We first perform a PCA on the variables. The results show that the first 4 components yields 97% of the variance. Here we will use the results of the puncture resistance predictive models as an example.
-![PCs variance]({{site.url}}/MIC-polymers/img/PCAproblem/results/PCA variance.PNG) 
-![regression results dartdrop]({{site.url}}/MIC-polymers/img/PCAproblem/results/dartdrop_results.PNG) 
+![PCs variance]({{site.url}}/MIC-polymers/img/PCAproblem/results/PCA variance.png) 
+![regression results dartdrop]({{site.url}}/MIC-polymers/img/PCAproblem/results/dartdrop_results.png) 
 ![absolute error]({{site.url}}/MIC-polymers/img/PCAproblem/results/error.PNG). 
 
 For evry single predictive model we have on average a high absolute error. Even with the model using the PCs. It's impossible to reach a good level of accuracy in the Structure-Property linkake because of 3 possible raisons:
@@ -103,7 +103,7 @@ Then we want to explore 2 other type of model:
 ![PP error]({{site.url}}/MIC-polymers/img/PCAproblem/results/PP_error.PNG)
 It's also impossible to accurately predict the mechanical properties using the process parameters and bivariate PC.
 2. Process-structure-Property: Predict the mechanical properties using both the structure PCs and the process parameters.
-![PSP error]({{site.url}}/MIC-polymers/img/PCAproblem/results/PSP_results.PNG)
+![PSP error]({{site.url}}/MIC-polymers/img/PCAproblem/results/PSP_results.png)
 
 The predictive model is still not accurate, but adding the molecular bivariate component didn't improve the model. 
 
