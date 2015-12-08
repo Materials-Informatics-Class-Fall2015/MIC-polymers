@@ -89,8 +89,8 @@ Then we want to explore 2 other type of model:
 2. Process-structure-Property: Predict the mechanical properties using both the structure PCs and the process parameters.
 
 
-
-
 ## Collaboration
+We have had several meetings with Dr. Kalidindi in order to develop strategies to approach our problems. Abhiram Kannan provided domain expertise when needed. We also received assistance from Yuksel Yabansu in simulating microstructures,
 
 ## Conclusion 
+We have identified many of the main issues regard microstructure recovery using SAXS images. We have built upon the forward problem of microstructure recovery. In effect, we laid the foundation for a database approach to be further explored in the future.  We have also built process-structure-property linkages using extracted microstructural information with varying results. Our results from error suggest that the data extracted may have been too severe a data reduction. Future efforts to make such a linkage would require the full use of SAXS and WAXS images.
