@@ -72,11 +72,11 @@ The main criteria we will be using to compare the predictive models are [LOOCV](
 ### Process-Structure Predictive model 
 
 We start by reducing the each bi-variate distribution to one concatenated vector:
-![Bivariate plots transformation]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/bivariate.png)
+![Bivariate plots transformation]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/bivariate.PNG)
 
 We then put the 3 vectors in PCA to extract the first component that yield 96% of the total variance (we will call it the bivariate PC). Then we are able to generate some predictive model of the bivariate PC as function of the structure parameters.
 
-![PS results]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/bivariate_results.png)
+![PS results]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/bivariate_results.PNG)
 
 We were able to generate 3 accurate models with a low error, that predict the bivariate PC as function of the structure variables. But the model is still based on a small number of data points.
 
@@ -85,7 +85,7 @@ We were able to generate 3 accurate models with a low error, that predict the bi
 The goal is to predict the 3 mechanical properties using our 13 extracted features (see [data extraction from the SAXS and WAXS images](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/11/25/data-extraction-from-the-SAXS-and-WAXS-images/) ).
 
 We first perform a PCA on the variables. The results show that the first 4 components yields 97% of the variance. Here we will use the results of the puncture resistance predictive models as an example.
-![PCs variance]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/PCA variance.png) ![regression results dartdrop]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/dartdrop_results.png) 
+![PCs variance]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/PCA variance.PNG) ![regression results dartdrop]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/dartdrop_results.PNG) 
 ![absolute error]({{ site.url}}/MIC-polymers/img/posts/PCAproblem/results/error.PNG). 
 
 For evry single predictive model we have on average a high absolute error. Even with the model using the PCs. It's impossible to reach a good level of accuracy in the Structure-Property linkake because of 3 possible raisons:
