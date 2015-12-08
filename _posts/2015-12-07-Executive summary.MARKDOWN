@@ -37,14 +37,14 @@ not been familiar with. Throughout the semester we have identified these problem
 4. Normalization of SAXS images to compare to each other
  
 ## Reconstruction Trials 
-# Direct Approach
+### Direct Approach
 We had originally were pursuing a method to obtain the 2-pt statistics. Since 2-pt statistics are in real space this would allow us to work with data we were more comfortable with. We have experimented
 with a characteristic equation  outlined [here](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/09/29/Derivation-equation/). However, since we were missing information at the beamstop
 which prevented us from extracting necessary information to correctly derive this equation. We had tried filling the information at the beamstop with a fit to estimate the necessary information [here](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/10/29/Beam_stop_revisited/)
 however after reevaluating the fact that the information was a fourier representation in which all variables were independent, we decided not to go with this route.
 Either way, once we obtained the 2 pt statistics we still did not have the phase information for the microstructures. We would need to recover the phase information as well to perform a direct reconstruction.
 
-# Database approach
+### Database approach
 Faced with incomplete statistics we decided to pursue building another method in order to attempt recovery. This method is referred to as the database method. The idea was to simulate various microstructures and 
 attempt to perform a match. The microstructures were modeled using rectangles representing crystalline regions and a figure representing this can be seen [here](http://materials-informatics-class-fall2015.github.io/MIC-polymers/2015/09/26/Background/).
 These microstructures were simulated, and the resulting scatter image was than produced. A comparison between how 2-pt statistics are found from microstructures versus how the scatter images are simulated can be found
