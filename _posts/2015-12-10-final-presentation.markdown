@@ -6,4 +6,4 @@ author:     	Marie Dekou and Andrew Castillo
 tags:         
 ---
 
-[final presentation]({{site.url}}/img/final presentaion 12_10.pdf)
+[final presentation]({{site.url}}/MIC-polymers/img/final presentaion 12_10.pdf)
